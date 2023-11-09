@@ -90,6 +90,7 @@ movies> db.movie_details.find({ "director": "james cameron","release":"2009" })
     release: '2009'
   }
 ]
+
  **7.Delete the movie which you don’t like.**
  
 movies> db.movie_details.remove({ "movie_title": "avatar" })
