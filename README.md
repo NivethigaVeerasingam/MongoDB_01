@@ -1,5 +1,6 @@
 # MongoDB_01
 **1.Create a Database called movies**
+
 test> use movies
 switched to db movies
 
