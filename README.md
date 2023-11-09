@@ -61,6 +61,62 @@ Director: 'James Cameron',
 Release Year: 2009
 }
 ]
+**5.List James Cameron’s movies.**
+movies> db.movie_details.find({ "director": "james cameron" })
+[
+  {
+    _id: ObjectId("654cb0aea645cb7638ba417c"),
+    movie_title: 'titanic',
+    type: 'romance',
+    director: 'james cameron',
+    release: '1997'
+  },
+  {
+    _id: ObjectId("654cb0aea645cb7638ba417e"),
+    movie_title: 'avatar',
+    type: 'science fiction',
+    director: 'james cameron',
+    'release year': '2009'
+  }
+  
+** 6. List James Cameron’s movies released in 2009.**
+movies> db.movie_details.find({ "director": "james cameron","release":"2009" })
+[
+  {
+    _id: ObjectId("654cb678a645cb7638ba4180"),
+    movie_title: 'avatar',
+    type: 'science fiction',
+    director: 'james cameron',
+    release: '2009'
+  }
+]
+ **7.Delete the movie which you don’t like.**
+ 
+movies> db.movie_details.remove({ "movie_title": "avatar" })
+{ acknowledged: true, deletedCount: 1 }
+
+**8.Add the movie which is your favorite.**
+
+movies> db.movie_details.insertOne({ "movie_title": "avatar","type":"science fiction","director":"james cameron","release":"2009" })
+{
+  acknowledged: true,
+  insertedId: ObjectId("654cb6d5a645cb7638ba4181")
+}
+**9.List movie Directed by Christopher Nolan in 1994.**
+
+db.moviesdetails.find({"Director":"Christopher Nolan","Release Year":1994})
+null
+
+**10.List out the Director’s Name in your document.**
+
+[
+  'Christopher Nolan',
+  'James Cameron',
+  'Lokesh Kanagaraj',
+  'Steven Spielberg'
+]
+
+
 
 
 
