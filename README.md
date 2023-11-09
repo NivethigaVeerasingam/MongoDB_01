@@ -23,5 +23,44 @@ movies> db.movie_details.insertMany([{"movie_title":"jurassic park","type":"adve
   }
 }
 
+**4. List all documents created.**
+[
+{
+_id: ObjectId("654c7f5117597cba8b45c14f"),
+Movie Title: 'Jurassic Park',
+Type: 'Adventure',
+Director: 'steven Spielberg',
+Release year: 1993
+},
+{
+_id: ObjectId("654c7f5117597cba8b45c150"),
+Movie Title: 'Forrest Gump',
+Type: 'drama',
+Director: 'Robert Zemeckies',
+Release year: 1994
+},
+{
+_id: ObjectId("654c7f5117597cba8b45c151"),
+Movie Title: 'Titanic',
+Type: 'Romance',
+Director: 'James Cameron',
+Release Year: 1997
+},
+{
+_id: ObjectId("654c7f5117597cba8b45c152"),
+Movie Tile: 'The Dark Knight',
+Type: 'Action',
+Director: 'Christopher Nolan',
+Release Year: 2008
+},
+{
+_id: ObjectId("654c7f5117597cba8b45c153"),
+Movie Title: 'Avatar',
+Type: 'Science Fiction',
+Director: 'James Cameron',
+Release Year: 2009
+}
+]
+
 
 
