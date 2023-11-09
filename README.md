@@ -102,6 +102,7 @@ movies> db.movie_details.insertOne({ "movie_title": "avatar","type":"science fic
   acknowledged: true,
   insertedId: ObjectId("654cb6d5a645cb7638ba4181")
 }
+
 **9.List movie Directed by Christopher Nolan in 1994.**
 
 db.moviesdetails.find({"Director":"Christopher Nolan","Release Year":1994})
